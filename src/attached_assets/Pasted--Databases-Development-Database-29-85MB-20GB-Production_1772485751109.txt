@@ -1,0 +1,195 @@
+
+Databases
+Development Database
+29.85MB / 20GB
+Production Database
+29.71MB / 100GB
+Billing Period
+Renews monthly, Mar 3
+Hours of Compute Used
+27.82 hours
+Production
+Status
+rasampratik published 26 minutes ago
+Visibility
+Public
+Domain
+https://me-first.replit.app
+Type
+Autoscale
+(4 vCPU / 8 GiB RAM / 3 Max)
+See all usage
+Database
+Production database connected
+Your production database is ready! Your app can now save and manage live user data securely.
+fa999f00
+RA
+rasampratik
+rasampratik
+published about 7 hours ago
+679688ce
+RA
+rasampratik
+rasampratik
+published about 8 hours ago
+e089eb47
+RA
+rasampratik
+rasampratik
+published about 22 hours ago
+fc38bd0a
+RA
+rasampratik
+rasampratik
+published about 24 hours ago
+34ae5977
+RA
+rasampratik
+rasampratik
+published 1 day ago
+97840898
+RA
+rasampratik
+rasampratik
+published 2 days ago
+4d7515cb
+RA
+rasampratik
+rasampratik
+published 2 days ago
+8e61cc0c
+RA
+rasampratik
+rasampratik
+published 2 days ago
+4bcea34d
+RA
+rasampratik
+rasampratik
+published 2 days ago
+3e1310a6
+RA
+rasampratik
+rasampratik
+published 2 days ago
+eb3b07aa
+RA
+rasampratik
+rasampratik
+published 2 days ago
+08d5ca54
+RA
+rasampratik
+rasampratik
+published 2 days ago
+cbb49f3c
+RA
+rasampratik
+rasampratik
+published 2 days ago
+46c7676f
+RA
+rasampratik
+rasampratik
+published 2 days ago
+d725a2eb
+RA
+rasampratik
+rasampratik
+published 2 days ago
+aefbc57a
+RA
+rasampratik
+rasampratik
+published 2 days ago
+180957af
+RA
+rasampratik
+rasampratik
+published 2 days ago
+ead64300
+RA
+rasampratik
+rasampratik
+published 3 days ago
+9f54b283
+RA
+rasampratik
+rasampratik
+published 3 days ago
+npm run dev
+23m
+ • 
+23 minutes ago
+Port :5000 opened on
+Settings
+Remote
+Connections
+Bitbucket
+Bitbucket
+Disconnected
+GitLab
+GitLab
+Disconnected
+GitHub
+GitHub
+Disconnected
+Commit author
+RA
+rasampratik
+rasampratik
+Default Profile
+rasampratik <32475155-rasampratik@users.noreply.replit.com>
+Enable "Accessible Terminal" in Workspace Settings to use a screen reader with the shell.
+Published your App
+I want to have a patient profile page where patient can set settings associated with the account settings like name, contact number, etc. If the patient name is not avaiable, we should collect this at the time of onboarding
+
+Can we remove the fulfilling life question from the patient questionaire?
+
+When a patient chooses a coach, can we have the following criteria:
+When you’re stuck, what helps most? (coaching style preference that the coach can use in sessions and while thinking about the activities and exercises)
+Someone who pushes me
+Someone who helps me reflect
+Someone who helps me build a plan
+
+I want to push this code to a git repo, how do I do that?
+
+once the files are pushed to git, will all the files be shown under the current timestamp, or when they were actually crrated?
+
+Your existing Git history will be fully preserved when you push. Each file will show the timestamp from when it was actually committed in your Repl — not the time you push to GitHub.
+
+Your project already has a full commit history with all the changes we've made (onboarding updates, profile page, coaching style changes, etc.), each with their original dates and messages. When you push to GitHub, all of those commits transfer over with their original timestamps intact.
+
+So on GitHub you'll see the complete timeline of when each change was actually made.
+
+Can I push the files to the git repo in such a way that all the files would look like they were created today?
+
+Yes, you can do that. Instead of pushing your existing commit history, you'd squash everything into a single new commit with today's date. Here's how you'd do it in the Shell:
+
+Create a new repo on GitHub (empty, no README)
+Then run these commands:
+git checkout --orphan fresh
+git add -A
+git commit -m "Initial commit"
+git branch -M fresh main
+git remote add origin https://github.com/your-username/your-repo-name.git
+git push -u origin main --force
+This creates a brand new commit with all your current files, dated today, with no prior history. On GitHub it will look like everything was created at once.
+
+One thing to keep in mind: this replaces your commit history, so you'd lose the individual change log within the repo. Your Repl's internal history (checkpoints) would still be preserved here on Replit though.
+
+If I give you access to my git repo , can you do that for me?
+
+I'm not able to push to external Git repositories directly — Replit's environment blocks destructive Git commands like git push for safety reasons.
+
+However, you can do it yourself quite easily. Here are the exact steps:
+
+Create an empty repository on GitHub (no README, no .gitignore)
+Open the Shell tab in your Repl
+Run these commands one at a time:
+git checkout --orphan fresh
+git add -A
+git commit -m "Initial commit"
+git branch -M fresh main
+git remote add origin https://github.com/your-username/your-repo-name.git
+git push -u origin main --force
